@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Token Launchpad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ Flash Launchpad</h1>
+            <button id="connectBtn">Connect Wallet</button>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>Deploy New Token</h2>
+                <div class="input-group">
+                    <label>Token Name</label>
+                    <input type="text" id="tName" placeholder="e.g. Bitcoin">
+                </div>
+                <div class="input-group">
+                    <label>Token Symbol</label>
+                    <input type="text" id="tSymbol" placeholder="e.g. BTC">
+                </div>
+                <div class="input-group">
+                    <label>Initial Supply</label>
+                    <input type="number" id="tSupply" placeholder="e.g. 1000000">
+                </div>
+                <button id="deployBtn" disabled>Deploy Token</button>
+            </div>
+            
+            <div id="status" class="status-box hidden"></div>
+        </main>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>
